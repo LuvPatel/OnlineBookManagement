@@ -60,6 +60,15 @@ namespace BookManagement
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
+        /// TextBox5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+
+        /// <summary>
         /// TextBox6 control.
         /// </summary>
         /// <remarks>
@@ -76,15 +85,6 @@ namespace BookManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
-
-        /// <summary>
-        /// TextBox5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
         /// TextBox8 control.
@@ -105,12 +105,12 @@ namespace BookManagement
         protected global::System.Web.UI.WebControls.TextBox TextBox9;
 
         /// <summary>
-        /// Button1 control.
+        /// SignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button SignUp;
     }
 }

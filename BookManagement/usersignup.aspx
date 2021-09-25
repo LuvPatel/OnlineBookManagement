@@ -24,6 +24,7 @@
                         </div>
 
                         <div class="row">
+                            
                             <div class="col-md-6">
                                 <label>Full Name : </label>
                                 <div class="form-group">
@@ -33,7 +34,7 @@
                             <div class="col-md-6">
                                 <label>Date Of Birth : </label>
                                  <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" Placeholder="Date Of Birth"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" Placeholder="Date Of Birth" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -87,13 +88,13 @@
                             <div class="col-md-4">
                                 <label>City  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox6" runat="server" Placeholder="City" TextMode="SingleLine"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TextBox5" runat="server" Placeholder="City" TextMode="SingleLine"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <label>PinCode  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox7" runat="server" Placeholder="PinCode" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TextBox6" runat="server" Placeholder="PinCode" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +103,7 @@
                             <div class="col">
                                 <label>Full Address: </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" Placeholder="Full Address" TextMode="MultiLine"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBox7" runat="server" Placeholder="Full Address" TextMode="MultiLine"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +138,7 @@
                                 <br>
                                 <div class="form-group">
                                     <center>
-                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:510px;" ID="Button1" runat="server" Text="Sign Up" />
+                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:510px;" ID="SignUp" runat="server" Text="Sign Up" OnClick="SignUp_Click" />
                                     </center>
                                 </div>
                             </div>

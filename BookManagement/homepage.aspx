@@ -7,7 +7,7 @@
             <img src="imgs/library_background.jpg" class="img-fluid" style="width:100%;height:400px;"/>
             <%--<img src="imgs/library_background_1.jpg" />--%>
 
-            <h1 style="padding-top:40px;text-align:center;color:#ffffff;background:#de9944;height:150px;">Online Library management</h1>
+            <h1 style="padding-top:40px;text-align:center;color:#ff0000;background:#98f4f9;height:150px;">Online Library management</h1>
         </div>
     </section>
     <section>
@@ -39,8 +39,8 @@
         </div>
     </section>
     <section>
-        <div class="container-fluid" style="background:#de9944;height:200px;">
-            <h1 style="text-align:center;padding-top:20px;color:#ffffff;">THE ONE STOP STORE FOR ALL BOOKS.</h1>
+        <div class="container-fluid" style="background:#98f4f9;height:200px;">
+            <h1 style="text-align:center;padding-top:20px;color:#ff0000;">THE ONE STOP STORE FOR ALL BOOKS.</h1>
             <img src="imgs/book-online.png" width="100" height="100" style="margin-left:600px;"/>
         </div>
     </section>
