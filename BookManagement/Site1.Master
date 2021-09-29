@@ -6,17 +6,21 @@
 <head runat="server">
     <title></title>
     <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatables css--%>
-    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%-- fontawesome css to be taken from online link --%>
 
     <%-- css style sheet --%>
-    <link href="css/customstylesheet.css" rel="stylesheet" />
+    <link href="/css/customstylesheet.css" rel="stylesheet" />
     <%-- jquery --%>
-    <script src ="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--<script src ="/bootstrap/js/jquery-3.3.1.slim.min.js"></script>--%>
+    <%--popper js--%>
+    <script src="/bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>    
     <%-- javascript link with popper --%>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -66,7 +70,7 @@
                             <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">Logout</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">

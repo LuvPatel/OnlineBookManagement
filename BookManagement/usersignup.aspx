@@ -28,13 +28,13 @@
                             <div class="col-md-6">
                                 <label>Full Name : </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" Placeholder="Full Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="fullname_txt" runat="server" Placeholder="Full Name"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Date Of Birth : </label>
                                  <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" Placeholder="Date Of Birth" TextMode="Number"></asp:TextBox>
+                                     <asp:TextBox CssClass="form-control" ID="dob_txt" runat="server" Placeholder="Date" TextMode="Date"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -43,13 +43,13 @@
                             <div class="col-md-6">
                                 <label>Contact NO : </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" Placeholder="Contact NO" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="contact_txt" runat="server" Placeholder="Contact No" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Email  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" Placeholder="Email" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="email_txt" runat="server" Placeholder="Email" TextMode="Email"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -88,13 +88,13 @@
                             <div class="col-md-4">
                                 <label>City  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox5" runat="server" Placeholder="City" TextMode="SingleLine"></asp:TextBox>
+                                    <asp:TextBox Class="form-control" ID="city_txt" runat="server" Placeholder="City"></asp:TextBox> 
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <label>PinCode  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox6" runat="server" Placeholder="PinCode" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="pincode_txt" runat="server" Placeholder="Pincode" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                             <div class="col">
                                 <label>Full Address: </label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox7" runat="server" Placeholder="Full Address" TextMode="MultiLine"></asp:TextBox>
+                                   <asp:TextBox CssClass="form-control" ID="fulladdress_txt" runat="server" Placeholder="Full Address" TextMode="MultiLine"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -117,15 +117,15 @@
                         <br>
                         <div class="row">
                             <div class="col-md-6">
-                                <label>User ID : </label>
+                                <label>Member ID : </label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox8" runat="server" Placeholder="User ID"></asp:TextBox>
+                                    <asp:TextBox Class="form-control" ID="TextBox8" runat="server" Placeholder="Member ID"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Password  : </label>
                                  <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" Placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBox9" runat="server" Placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,8 @@
                                 <br>
                                 <div class="form-group">
                                     <center>
-                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:510px;" ID="SignUp" runat="server" Text="Sign Up" OnClick="SignUp_Click" />
+                                        <%--<asp:Button class="btn btn-success btn-block btn-lg" style="width:510px;" ID="SignUp" runat="server" Text="Sign Up" OnClick="SignUp_Click" />--%>
+                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:510px;" ID="Button1" runat="server" Text="SignUp" OnClick="Button1_Click" />
                                     </center>
                                 </div>
                             </div>
