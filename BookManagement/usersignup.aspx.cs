@@ -74,7 +74,7 @@ namespace BookManagement
                     }
 
 
-                    SqlCommand cmd = new SqlCommand("INSERT INTO member_master_tabel(full_name,dob,contact_no,email,state,city,pincode,full_address,member_id,password,account_status)" +
+                    SqlCommand cmd = new SqlCommand("INSERT INTO member_login(full_name,dob,contact_no,email,state,city,pincode,full_address,member_id,password,account_status)" +
                          "VALUES(@full_name,@dob,@contact_no,@email,@state,@city,@pincode,@full_address,@member_id,@password,@account_status)", con);
                     //SqlCommand cmd = new SqlCommand("INSERT INTO member_master_tabel VALUES('abhay', '11-10-2018', '1234567890', 'mail@demo.com', 'Gujarat', 'Ahmedabad', '380001', 'qwertytjfgnbvf', 'ts13', '456', 'pending');", con);
                     cmd.Parameters.AddWithValue("@full_name", fullname_txt.Text.Trim());
@@ -112,7 +112,7 @@ namespace BookManagement
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("SELECT * FROM member_master_tabel WHERE member_id='"+TextBox8.Text.Trim()+"';", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM member_login WHERE member_id='"+TextBox8.Text.Trim()+"';", con);
                 //SqlCommand cmd = new SqlCommand("INSERT INTO member_master_tabel(full_name,dob,contact_no,email,state,city,pincode,full_address,member_id,password,account_status) VALUES(@full_name,@dob,@contact_no,@email,@state,@city,@pincode,@full_address,@member_id,@password,@account_status)", con);
                 //SqlCommand cmd = new SqlCommand("INSERT INTO member_master_tabel VALUES('abhay', '11-10-2018', '1234567890', 'mail@demo.com', 'Gujarat', 'Ahmedabad', '380001', 'qwertytjfgnbvf', 'ts13', '456', 'pending');", con);                
 

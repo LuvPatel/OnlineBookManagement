@@ -28,7 +28,7 @@ namespace BookManagement
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("select * from admin_login_tbl where username='" + TextBox1.Text.Trim() + "' AND password='" + TextBox2.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from admin_login where username='" + TextBox1.Text.Trim() + "' AND password='" + TextBox2.Text.Trim() + "'", con);
                 SqlDataReader dataread = cmd.ExecuteReader();
                 if (dataread.HasRows)
                 {

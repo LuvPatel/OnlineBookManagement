@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="BookManagement.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+      $(document).ready(function () {
+      
+          //$(document).ready(function () {
+              //$('.table').DataTable();
+         // });
+      
+          $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+          //$('.table1').DataTable();
+      });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
@@ -146,7 +157,7 @@
                                 <br>
                                 <div class="form-group">
                                     <center>
-                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:245px;" ID="Button1" runat="server" Text="Update" />
+                                        <asp:Button class="btn btn-success btn-block btn-lg" style="width:245px;" ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" />
                                     </center>
                                 </div>
                             </div>
@@ -178,7 +189,8 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="True">
+                                </asp:GridView>
                             </div>
                         </div>
                     </div>

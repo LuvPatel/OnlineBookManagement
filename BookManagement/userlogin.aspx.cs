@@ -30,7 +30,7 @@ namespace BookManagement
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("SELECT * FROM member_master_tabel WHERE member_id = '" + TextBox1.Text.Trim() + "' AND password = '" + TextBox2.Text.Trim() + "';", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM member_login WHERE member_id = '" + TextBox1.Text.Trim() + "' AND password = '" + TextBox2.Text.Trim() + "';", con);
                 SqlDataReader dataread = cmd.ExecuteReader();
                 if (dataread.HasRows)
                 {

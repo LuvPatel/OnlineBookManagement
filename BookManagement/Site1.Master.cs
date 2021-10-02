@@ -115,6 +115,18 @@ namespace BookManagement
             Session["fullname"] = "";
             Session["role"] = "";
             Session["status"] = "";
+
+            Response.Redirect("homepage.aspx");
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewBooks.aspx");
+        }
+
+        protected void LinkButton7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx");
         }
     }
 }

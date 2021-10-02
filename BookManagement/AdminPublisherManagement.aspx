@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdminPublisherManagement.aspx.cs" Inherits="BookManagement.AdminPublisherManagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+      $(document).ready(function () {
+      
+          //$(document).ready(function () {
+              //$('.table').DataTable();
+         // });
+      
+          $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+          //$('.table1').DataTable();
+      });
+    </script>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -27,7 +38,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" Placeholder="Publisher ID"></asp:TextBox>
-                                        <asp:Button ID="Button2" Text="Submit" runat="server" class="btn btn-sm btn-success"/>
+                                        <asp:Button ID="Button2" Text="Submit" runat="server" class="btn btn-sm btn-success" OnClick="Button2_Click"/>
                                     </div>
                                 </div>
                             </div>
@@ -45,9 +56,9 @@
                                 <br>
                                 <div class="form-group">
                                     <center>
-                                        <asp:Button class="btn btn-success btn-block btn-sm" ID="Button1" runat="server" Text="Add" />
-                                        <asp:Button class="btn btn-warning btn-block btn-sm" ID="Button3" runat="server" Text="Update" />
-                                        <asp:Button class="btn btn-danger btn-block btn-sm" ID="Button4" runat="server" Text="Delete" />
+                                        <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" Width="86px" />
+                                        <asp:Button class="btn btn-warning btn-lg" ID="Button3" runat="server" Text="Update" OnClick="Button3_Click" />
+                                        <asp:Button class="btn btn-danger btn-lg" ID="Button4" runat="server" Text="Delete" OnClick="Button4_Click" />
                                     </center>
                                 </div>
                             </div>
@@ -67,8 +78,23 @@
                             </div>
                         </div>
                         <div class="row">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ebookDBConnectionString3 %>" SelectCommand="SELECT * FROM [publisher_login]"></asp:SqlDataSource>
                             <div class="col">
-                                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="publisher_id" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="publisher_id" HeaderText="publisher_id" ReadOnly="True" SortExpression="publisher_id" />
+                                        <asp:BoundField DataField="publisher_name" HeaderText="publisher_name" SortExpression="publisher_name" />
+                                    </Columns>
+                                    <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+                                    <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+                                    <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+                                    <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#FFF1D4" />
+                                    <SortedAscendingHeaderStyle BackColor="#B95C30" />
+                                    <SortedDescendingCellStyle BackColor="#F1E5CE" />
+                                    <SortedDescendingHeaderStyle BackColor="#93451F" />
+                                </asp:GridView>
                             </div>
                         </div>
                     </div>
