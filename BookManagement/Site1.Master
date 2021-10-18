@@ -102,20 +102,33 @@
             <br><br><br>
             <div id="footer1" class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center" style="background:#e9e9e9;height:150px;display:flex;flex-wrap:wrap;">
+                        <%--<p>--%>
+                            <div class="box">
+                                <asp:LinkButton class="footerlinks" style="background:#61c4db;color:black;border-radius:20px;text-align:center;color:black;border:3px solid #61c4db;padding:0 20px 20px 20px;margin-left:540px" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
+                            
+                            </div>
+                            <div class="box" style="margin-top:50px;margin-left:20px;">
+                                <asp:LinkButton class="footerlinks" style="background:#61c4db;color:black;border-radius:20px;padding:15px 40px 15px 40px;border:3px solid #61c4db;" ID="LinkButton11" runat="server" OnClick="LinkButton11_Click" Visible="False">Author Management</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server" OnClick="LinkButton11_Click" Visible="False">Author Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server" OnClick="LinkButton12_Click" Visible="False">Publisher Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">Book Inventory</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">Book Issuing</asp:LinkButton>
-                            &nbsp;
-                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">Member Management</asp:LinkButton>
-                        </p>
+                            </div>
+                            <div class="box" style="margin-top:50px;margin-left:20px;">
+                                <asp:LinkButton class="footerlinks" style="background:#61c4db;padding:15px 40px 15px 40px;border-radius:20px;border:3px solid #61c4db;" ID="LinkButton12" runat="server" OnClick="LinkButton12_Click" Visible="False">Publisher Management</asp:LinkButton>
+                                &nbsp;
+                            </div>
+                            <div class="box" style="margin-top:50px;margin-left:20px;">
+                                <asp:LinkButton class="footerlinks" style="background:#61c4db;padding:15px 40px 15px 40px;border-radius:20px;border:3px solid #61c4db;" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">Book Inventory</asp:LinkButton>
+                                &nbsp;
+                            </div>
+                            <div class="box" style="margin-top:50px;margin-left:20px;">
+                                 <asp:LinkButton class="footerlinks" style="background:#61c4db;padding:15px 40px 15px 40px;border-radius:20px;border:3px solid #61c4db;" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">Book Issuing</asp:LinkButton>
+                                &nbsp;
+                            </div>    
+                            <div class="box" style="margin-top:50px;margin-left:20px;">
+                                <asp:LinkButton class="footerlinks" style="background:#61c4db;padding:15px 40px 15px 40px;border-radius:20px;border:3px solid #61c4db;" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">Member Management</asp:LinkButton>
+                            </div>  
+                             
+                       <%-- </p>--%>
 
                     </div>
 
@@ -123,7 +136,7 @@
             </div>
             <div id="footer2" class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center" style="background:black">
                         <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank"></a></p>
                     </div>
                 </div>

@@ -4,10 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
         <div class="container-fluid">
-            <img src="imgs/library_background.jpg" class="img-fluid" style="width:100%;height:400px;"/>
-            <%--<img src="imgs/library_background_1.jpg" />--%>
+            
 
-            <h1 style="padding-top:40px;text-align:center;color:#ff0000;background:#98f4f9;height:150px;">Online Library management</h1>
+            <h1 style="padding-top:40px;text-align:center;color:#ff0000;background:#98f4f9;height:150px;">Online Book management</h1>
         </div>
     </section>
     <section>
@@ -21,8 +20,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4" style="text-align:center;">
-                    <img src="imgs/digital-inventory.png" width="90" height="90"/>
-                    <h4>Digital Book Inventory</h4>
+                    <img src="imgs/publisher.png" width="90" height="90"/>
+                    <h4>Digital Inventory</h4>
                     <p class="text-justify">One Stop Solution To Your all Book Needs With A wide Range Of Book Collection.</p>
                 </div>
                 <div class="col-md-4" style="text-align:center;">
@@ -31,7 +30,7 @@
                     <p class="text-justify">Search For A Book From Our EverEnding Shelves OF Books. Simply Find A Book by name,author, etc.</p>
                 </div>
                 <div class="col-md-4" style="text-align:center;">
-                    <img src="imgs/defaulters-list.png" width="90" height="90" />
+                    <img src="imgs/publisher.png" width="90" height="90" />
                     <h4>Manage Your Books</h4>
                     <p class="text-justify">Now You can keep Records of all the book simply in Your Profile Tab where Books Can be viewed.</p>
                 </div>

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card" style="border-radius:30px;background: #e9efef;">
-                    <div class="card-body" style="height:420px;">
+                    <div class="card-body" style="height:480px;">
                         <div class="row">
                             <div class="col">
                                 <center>
